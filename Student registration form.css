@@ -1,0 +1,104 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-sizing:border-box;
+}
+body{
+  display:flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding :10px;
+
+  background :#1ed0e8;
+}.data{
+  max-width: 700px;
+  width: 100%;
+  background:#fff;
+  margin: 10px;
+  padding : 25px 30px;
+    border-radius: 7px;
+}
+.data.title{
+  font-size: 70px;
+  font-family: 500;
+  position: relative;
+}
+.data .title:: before{
+  content:'';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  
+  height: 4px;
+  width: 30px;
+  background :#FF3737;
+}
+.data form .student-details{
+  display :flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin:20px 0 12px 0;
+}
+form .student-details .input-box{
+  margin-bottom: 15px;
+  
+  width: calc(100% / 2 - 20px);
+  
+}
+ .student-details .input-box input{
+   height:45px;
+   width: 100%;
+   outline: none;
+ }
+.student-details .input-box . details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  border-radius:5px;
+  padding-left: 10px;
+}
+form .button{
+  height:45px;
+  margin:45px 0;
+}
+form .button input{
+  height :45px;
+  width: 100%;
+  outline:none;
+  border:none;
+  font-size: 18px;
+  font-weight: 300;
+   background-color: #94b3b1;
+  color: black;
+  
+  
+}
+@media (max-width:584px) {
+  .container{
+    width:100%;
+    
+  }
+  form .student-details .input-box{
+    width: 95%;
+  }
+  form .student-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .student-details::-webkit:scrollbar{
+    width: 0;
+  }
+  
+  
+}
+form .button input:hover{
+  background-color:#1ed0e8;
+  color:#ffffff;
+}
+form .student-details .input-box select{
+  width: 100%;
+  height:45px;
+}
+
+

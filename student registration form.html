@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Registration form</title>
+  <link rel="stylesheet" href="Student registration form.css">
+</head>
+
+<body>
+  <div class="data">
+    <div class="title">
+      <h1>Student Registration</h1>
+      </div>
+    <form action="#">
+    
+    <div class="student-details">
+      <div class="input-box">
+        <label for="First name" class="details">First Name</label>
+        <input type="text" placeholder="Enter your name" required>
+      </div>
+      <div class="input-box">
+        <label for="Surname" class="details">Surname</label>
+        <input type="text" placeholder="Enter your Surname" >
+      </div>
+      <div class="input-box">
+        <label for="Birthday">Date of Birth</label>
+        <input type="date" >
+      </div>
+      <div class="input-box">
+        <label for="Gender">Gender</label>
+        <input list="Genders">
+        <datalist id="Genders">
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+          
+        </datalist>
+      </div>
+      <div class="input-box">
+           <label for="Department">Department</label>
+           <select name="Department" id="Department">Department
+             <option value="#">Select</option>
+             <option value="CIVIL">CIVIL</option>
+             <option value="EEE">EEE</option>
+             <option value="MECH">MECH</option>
+             <option value="ECE">ECE</option>
+             <option value="CSE">CSE</option>
+             <option value="AGRI">AGRI</option>
+           </select>
+         </div>
+         <div class="input-box">
+           <label for="Department Code">Department Code</label>
+           <select name="DepartmentCode" id="DepartmentCode">DepartmentCode
+             <option value="#">Select</option>
+        
+             <option value="CIVIL">1A01</option>
+             <option value="EEE">1A02</option>
+             <option value="MECH">1A03</option>
+             <option value="ECE">1A04</option>
+             <option value="CSE">1A05</option>
+             <option value="AGRI">1A35</option>
+           </select>
+        
+         </div>
+      <div class="input-box">
+        <label for="email" class="details">Email</label>
+        <input type="email" placeholder="Ex:xyz@gmail.com" required>
+      </div>
+      <div class="input-box">
+        <label for="rollno" class="details">Roll Number</label>
+        <input type="text" placeholder="Enter your roll number" required>
+      </div>
+
+      
+      <div class="input-box">
+        <label for="YOP" class="details">Year of Passing</label>
+        <input type="month" placeholder="Enter your name">
+      </div>
+      <div class="input-box">
+        <label for="Percentage" class="details">Total Percentage</label>
+        <input type="text" placeholder="Enter your Percentage" >
+        </div>
+        
+     
+    </div>
+    <div class="button">
+        <input type="submit" value="Register Now">
+      </div>
+    </form>
+     </div>
+     
+    
+  </div>
+  
+ 
+
+</body>
+
+</html>
